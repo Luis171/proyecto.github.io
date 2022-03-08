@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #ffffff;
+}
+
+body{
+    background-color: #415c6e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23837e8a' fill-opacity='0.19' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+p{
+    color: #ffffff;
+}
+
+a{
+color: #ffffff;
+text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 100px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*navegacion izquierda*/
+
+.nav ul{
+    display: flex;
+    }
+    
+    .nav ul li{
+        padding: 40px;
+    }
+    
+    .nav ul li a{
+        padding: 4px;
+    }
+    
+    .nav ul li a:hover{
+        border-bottom: 2px solid #ffffff;
+    }
+    
+    .nav ul.ul-menu{
+        flex: 1;
+        margin-left: 550px;
+    }
+    
+    hr{
+        margin-bottom: 20px;
+    }
+    
+    .menu-btn{
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 30px;
+        color: #ffffff;
+        z-index: 2;
+        font-size: 20px;
+        display: none;
+    }
+
+    .menu-titulo{
+        display: none;
+    }
+
+
+/*baner*/
+
+.texto{
+    width: 90%;
+}
+
+.header{
+    width: 100%;
+    height: 550px;
+    background: url(img/baner1.png) no-repeat center center/cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    margin: 3px;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.header h2,
+.header p{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/*titulo 2*/
+
+.titulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.viv{
+    display: flex;
+    justify-content: center;
+}
+
+.video1{
+    width: 700px;
+    height: 500px;
+    margin: 40px;
+}
+
+/*fotos que me gustan*/
+
+.fotos-gustan{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 140px;
+}
+
+.fotos-gustan img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    object-fit: cover;
+}
+
+.fotos-gustan img:hover{
+    opacity: .7;
+    cursor: pointer;
+    transform: scale(1.050,1.050);
+}
+
+.parte2{
+    display: block;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+
+
+.parte2 h3,
+.parte2 p{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.fotos-gustan h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.titulo3{
+    margin: 30px 0px 10px;
+    color: #ffffff;
+}
+
+.parrafo .cont2{
+    margin: 20px 30px;
+}
+
+
+
+/*baner 2*/
+
+.baner-2{
+    width: 100%;
+    height: 350px;
+    background: url("img/baner2.jpg") no-repeat center center/cover;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.baner-2 .contenido{
+    width: 40%;
+    padding: 110px 0 0 30px;
+    color: #ffffff;
+}
+
+.baner-2 .contenido a{
+   margin-top: 15px;
+}
+
+.baner-2 h2,
+.baner-2 p{
+    margin: 10px 0 -10px 0;
+}
+
+/*enlaces*/
+
+.redes{
+    margin: 50px;
+}
+
+.redes p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a{
+    margin: 0 30px;
+
+}
+
+.link a i{
+    font-size: 60px;
+}
+
+/*footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer{
+    background: #2f3640;
+    color: #707070;
+    font-size: 12px;
+    padding: 35px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.inicio{
+    color: #707070;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.año{
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 700px) {
+
+    
+
+    .menu-btn{
+        display: block;
+    }
+
+    
+
+    .nav ul.ul-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        transform: translateX(-1300px);
+        transition: transform .5s ease-in-out;
+        z-index: 1;
+    }
+
+    .menu-titulo{
+        display: block;
+        position: absolute;
+        color: #ffffff;
+        top: 20px;
+        right: 310px;
+        border-bottom: 3px solid #ffffff;
+    }
+
+    .nav ul{
+        padding-top: 30px;
+    }
+    
+    .nav ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    
+
+    .nav ul.ul-menu.show{
+        transform: translateX(-550px);
+    }
+
+    .fotos-gustan{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .fotos-gustan2{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+
+    .baner-2 .contenido{
+        width: 80%;
+    }
+    
+
+}
+
+
+@media (max-width: 500px){
+
+    .fotos-gustan{
+        grid-template-columns: 1fr;
+    }
+
+    .fotos-gustan img{
+        height: 650px;
+    }
+
+    .baner-2{
+        width: 100%;
+    }
+
+
+    .fotos-gustan2{
+        grid-template-columns: 1fr;
+    }
+
+    .fotos-gustan2 img{
+        height: 650px;
+    }
+
+
+    
+
+}
